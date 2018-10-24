@@ -1,0 +1,313 @@
+@charset "UTF-8";
+body {
+  font-family: Verdana, Geneva, sans-serif;
+  font-size: 0.9em;
+  color: #333;
+}
+body a {
+  color: #34a00f;
+  text-decoration: none;
+}
+body a:not(.fa):hover,
+body a:not(.fa):active,
+body a:not(.fa):focus {
+  text-decoration: underline;
+}
+header,
+footer {
+  color: #999;
+}
+header strong,
+footer strong {
+  color: #333;
+}
+header .container,
+footer .container {
+  width: 100%;
+  min-height: 7em;
+  padding: 0.5em 0;
+  margin: 0 auto;
+}
+header .container .fa {
+  margin-right: 10px;
+  float: left;
+}
+header .container .menu {
+  width: 74%;
+  margin: 15px auto;
+  color: #333;
+}
+header .container .menu h3 {
+  margin: 5px 5px 5px 0;
+  white-space: pre;
+  float: left;
+}
+header .container .menu div:first-of-type {
+  float: left;
+}
+header .container .menu div:last-of-type {
+  float: right;
+}
+header .container .breadcrumb {
+  width: 85%;
+  margin: 0px auto;
+}
+header .container .breadcrumb ul {
+  margin-left: 4em;
+}
+header .container .breadcrumb ul li a,
+header .container .breadcrumb ul li span {
+  vertical-align: text-bottom;
+  padding: 0px 0px 6px ;
+  margin: 0px 10px;
+  display: inline-block;
+}
+header .container .breadcrumb ul li a:not(.fa),
+header .container .breadcrumb ul li span:not(.fa) {
+  font-family: Verdana, Geneva, sans-serif;
+  font-size: 0.5em;
+}
+header .container .breadcrumb ul li span {
+  color: #333;
+}
+header .container.banner {
+  background-color: #ededed;
+}
+header .container.banner > div {
+  width: 75%;
+  margin: 0px auto;
+}
+header .container.banner .col {
+  width: 18%;
+  min-height: 50px;
+}
+header .container.banner .col:last-of-type {
+  float: right;
+}
+header .container.banner .col:last-of-type .fa,
+header .container.banner .col:last-of-type strong {
+  color: #34a00f;
+}
+section {
+  overflow: hidden;
+}
+section fieldset {
+  border: none;
+}
+section fieldset label {
+  margin-bottom: 0.5em;
+  font-size: 1em;
+  font-weight: bold;
+  line-height: 1em;
+  display: block;
+}
+section fieldset label:not(:first-of-type) {
+  margin-top: 1.6em;
+}
+section fieldset label.inline-label {
+  margin: 0 1em 0 0;
+  font-weight: normal;
+  color: #777;
+  display: inline;
+}
+section fieldset label span {
+  margin-top: 4px;
+  float: right;
+  vertical-align: baseline;
+}
+section fieldset input:hover,
+section fieldset input:active,
+section fieldset input:focus {
+  box-shadow: 0 0 0px 1px rgba(52, 160, 15, 0.8);
+}
+section fieldset input[type="text"] {
+  width: 100%;
+  padding: 4px;
+  box-shadow: 0 0 0 0 transparent;
+}
+section fieldset input[type="text"].required {
+  box-shadow: 0 0 1px 2px red;
+}
+section fieldset i,
+section fieldset span {
+  font-size: 12px;
+  line-height: 12px;
+  font-weight: normal;
+  color: #9a9a99;
+  display: inline;
+}
+section .container {
+  position: relative;
+  width: 74%;
+  margin: 0px auto;
+}
+section .container > div {
+  margin-top: 3em;
+}
+section .container .help {
+  color: #676767;
+  background-color: #ededed;
+  border: 1px solid #bbb;
+  border-radius: 5px;
+  overflow: hidden;
+}
+section .container .help h4 {
+  padding-left: 1em;
+  float: left;
+}
+section .container .help div.toggle {
+  padding: 12px;
+  float: right;
+}
+section .container .help div.toggle a {
+  padding: 5px;
+  display: block;
+  overflow: hidden;
+  display: none;
+}
+section .container .help div.toggle a.default {
+  display: block;
+}
+section .container .help div.toggle a span {
+  float: left;
+}
+section .container .help div.toggle a .fa {
+  margin-left: 7px;
+}
+section .container .help div.toggle.active a {
+  display: block;
+}
+section .container .help div.toggle.active a.default {
+  display: none;
+}
+section .container .help div.content {
+  width: auto;
+  background-color: white;
+  border-top: 1px solid #bbb;
+}
+section .container .help div.content p {
+  font-size: 0.9em;
+  line-height: 1.4em;
+}
+section .container .help div.content .fa {
+  color: #999;
+  padding-right: 10px;
+  padding-bottom: 5px;
+  float: left;
+}
+section .container .help div.content .fa.fa-7x {
+  font-size: 7em;
+}
+section .container .content fieldset {
+  max-width: 400px;
+}
+section .container .sidebar .user-form-action {
+  position: relative;
+  margin-top: 3em;
+  margin-right: 2em;
+  text-align: right;
+  float: right;
+}
+section .container .sidebar .user-form-action input {
+  min-width: 90px;
+  padding: 0.5em 1em;
+  margin: 4px 2px;
+  font-size: 1em;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  border: none;
+  border-radius: 5px;
+  display: inline-block;
+  cursor: pointer;
+  opacity: 0.9;
+}
+section .container .sidebar .user-form-action input[type="submit"] {
+  color: white;
+  background: #34a00f;
+}
+section .container .sidebar .user-form-action input[type="button"] {
+  color: black;
+  background: lightgrey;
+}
+section .container .sidebar .user-form-action input:hover {
+  opacity: 1;
+}
+section .container .table .title {
+  padding-top: 0.5em;
+  font-weight: bold;
+  color: white;
+  background-color: #34a00f;
+  border-radius: 2px;
+}
+section .container .table > div:not(.title) {
+  overflow: hidden;
+}
+section .container .table > div:not(.title):nth-child(odd) {
+  background-color: white;
+}
+section .container .table > div:not(.title):nth-child(even) {
+  background-color: #f5f5f5;
+}
+section .container .table > div:not(.title):hover {
+  background-color: rgba(52, 160, 15, 0.2);
+}
+section .container .table > div:not(.title):hover .fa {
+  display: block;
+}
+section .container .table .col {
+  min-height: 50px;
+}
+section .container .table .col:nth-of-type(1) {
+  width: 16%;
+}
+section .container .table .col:nth-of-type(2) {
+  width: 21%;
+}
+section .container .table .col:nth-of-type(3) {
+  width: 12%;
+}
+section .container .table .col:nth-of-type(4) {
+  width: 16%;
+}
+section .container .table .col:nth-of-type(5) {
+  width: 15%;
+}
+section .container .table .col:nth-of-type(6) {
+  width: 16%;
+}
+section .container .table .col:nth-child(7) {
+  width: 3.96%;
+  padding: 0px;
+  margin: 0px;
+  text-align: center;
+  cursor: pointer;
+  border-radius: 50%;
+}
+section .container .table .col:nth-child(7) .fa {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  padding: 15px;
+  transform: translate(-50%, -50%);
+  font-size: 1.2em;
+  opacity: 0.7;
+  display: none;
+}
+section .container .table .col span {
+  font-size: 0.9em;
+  text-transform: uppercase;
+  color: #999;
+}
+footer {
+  margin-top: 10em;
+}
+footer .container {
+  width: 74%;
+}
+footer .container span:first-of-type {
+  float: left;
+}
+footer .container span:last-of-type {
+  float: right;
+}

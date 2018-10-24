@@ -1,0 +1,334 @@
+@charset "UTF-8";
+
+body {
+  font-family: Verdana, Geneva, sans-serif;
+  font-size: 0.9em;
+  color: #333;
+  a {
+    color: rgb(52, 160, 15); // green
+    text-decoration: none;
+    &:not(.fa) {
+      &:hover,
+      &:active,
+      &:focus {
+        text-decoration: underline;
+      }
+    }
+  }
+}
+
+header,
+footer {
+  color: #999;
+  strong {
+    color: #333;
+  }
+  .container {
+    width: 100%;
+    min-height: 7em;
+    padding: 0.5em 0;
+    margin: 0 auto;
+  }
+}
+
+header {
+  .container {
+    .fa {
+      margin-right: 10px;
+      float: left;
+    }
+    .menu {
+      width: 74%;
+      margin: 15px auto;
+      color: #333;
+      h3 {
+        margin: 5px 5px 5px 0;
+        white-space: pre;
+        float: left;
+      }
+      div:first-of-type {
+        float: left;
+      }
+      div:last-of-type {
+        float: right;
+      }
+    }
+    .breadcrumb {
+      width: 85%;
+      margin:0px auto;
+      ul {
+        margin-left: 4em;
+        li {
+          a,
+          span {
+            vertical-align: text-bottom;
+            padding: 0px 0px 6px ;
+            margin: 0px 10px;
+            display: inline-block;
+            &:not(.fa) {
+              font-family: Verdana, Geneva, sans-serif;
+              font-size: 0.5em;
+            }
+          }
+          span {
+            color: #333;
+          }
+        }
+      }
+    }
+    &.banner {
+      background-color: #ededed;
+      > div {
+        width: 75%;
+        margin:0px auto;
+      }
+      .col {
+        width: 18%;
+        min-height: 50px;
+        &:last-of-type {
+          float: right;
+          .fa,
+          strong {
+            color: rgb(52, 160, 15); // green
+          }
+        }
+      }
+    }
+  }
+}
+
+section {
+  overflow: hidden;
+  fieldset {
+    border: none;
+    label {
+      &:not(:first-of-type) {
+        margin-top: 1.6em;
+      }
+      margin-bottom: 0.5em;
+      font-size: 1em;
+      font-weight: bold;
+      line-height: 1em;
+      display: block;
+      &.inline-label {
+        margin: 0 1em 0 0;
+        font-weight: normal;
+        color: #777;
+        display: inline;
+      }
+      span {
+        margin-top: 4px;
+        float: right;
+        vertical-align: baseline;
+      }
+    }
+    input {
+      &:hover,
+      &:active,
+      &:focus {
+        box-shadow: 0 0 0px 1px rgba(52, 160, 15, 0.8); // green
+      }
+      &[type="text"] {
+        width: 100%;
+        padding: 4px;
+        box-shadow: 0 0 0 0 transparent;
+        &.required {
+          box-shadow: 0 0 1px 2px red; // red
+        }
+      }
+    }
+    i,
+    span {
+      font-size: 12px;
+      line-height: 12px;
+      font-weight: normal;
+      color: #9a9a99;
+      display: inline;
+    }
+  }
+  .container {
+    position: relative;
+    width: 74%;
+    margin: 0px auto;
+    > div {
+      margin-top: 3em;
+    }
+    .help {
+      color: #676767;
+      background-color:#ededed;
+      border: 1px solid #bbb;
+      border-radius: 5px;
+      overflow: hidden;
+      h4 {
+        padding-left: 1em;
+        float: left;
+      }
+      div.toggle {
+        padding: 12px;
+        float: right;
+        a {
+          padding: 5px;
+          display: block;
+          overflow: hidden;
+          display: none;
+          &.default {
+            display: block;
+          }
+          span {
+            float: left;
+          }
+          .fa {
+            margin-left: 7px;
+          }
+        }
+        &.active {
+          a {
+            display: block;
+            &.default {
+              display: none;
+            }
+          }
+        }
+      }
+      div.content {
+	width: auto;
+        background-color: white;
+        border-top: 1px solid #bbb;
+        p {
+          font-size: 0.9em;
+          line-height: 1.4em;
+        }
+        .fa {
+          color: #999;
+          padding-right: 10px;
+          padding-bottom: 5px;
+          float: left;
+          &.fa-7x {
+            font-size: 7em;
+          }
+        }
+      }
+    }
+    .content {
+      fieldset {
+        max-width: 400px;
+      }
+    }
+    .sidebar {
+      .user-form-action {
+        position: relative;
+        margin-top: 3em;
+	margin-right: 2em;
+        text-align: right;
+	float: right;
+        input {
+          min-width: 90px;
+          padding: 0.5em 1em;
+          margin: 4px 2px;
+          font-size: 1em;
+          font-weight: bold;
+          text-align: center;
+          text-decoration: none;
+          border: none;
+          border-radius: 5px;
+          display: inline-block;
+          cursor: pointer;
+          opacity: 0.9;
+          &[type="submit"] {
+            color: white;
+            background: rgb(52, 160, 15);
+          }
+          &[type="button"] {
+            color: black;
+            background: lightgrey;
+          }
+          &:hover {
+            opacity: 1
+          }
+        }
+      }
+    }
+    .table {
+      .title {
+        padding-top: 0.5em;
+        font-weight: bold;
+        color: white;
+        background-color: rgb(52, 160, 15);
+        border-radius: 2px;
+      }
+      > div:not(.title) {
+        overflow: hidden;
+        &:nth-child(odd) {
+         background-color: white;
+        }
+        &:nth-child(even) {
+         background-color: #f5f5f5;
+        }
+        &:hover {
+          background-color: rgba(52, 160, 15, 0.2);
+          .fa {
+            display: block;
+          }
+        }
+      }
+      .col {
+        min-height: 50px;
+        &:nth-of-type(1) {
+          width: 16%;
+        }
+        &:nth-of-type(2) {
+          width: 21%;
+        }
+        &:nth-of-type(3) {
+          width: 12%;
+        }
+        &:nth-of-type(4) {
+          width: 16%;
+        }
+        &:nth-of-type(5) {
+          width: 15%;
+        }
+        &:nth-of-type(6) {
+          width: 16%;
+        }
+        //border: 1px dashed black;
+        &:nth-child(7) {
+          width: 3.96%;
+          padding: 0px;
+          margin: 0px;
+          text-align: center;
+          cursor: pointer;
+          border-radius: 50%;
+          .fa {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            padding: 15px;
+            transform: translate(-50%, -50%);
+            font-size: 1.2em;
+            opacity: 0.7;
+            display: none;
+          }
+        }
+        span {
+          font-size: 0.9em;
+          text-transform: uppercase;
+          color: #999
+        }
+      }
+    }
+  }
+}
+
+footer {
+  margin-top: 10em;
+  .container {
+    width: 74%;
+    span:first-of-type {
+      float: left;
+    }
+    span:last-of-type {
+      float: right;
+    }
+  }
+}

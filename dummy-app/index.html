@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title>dummy app</title>
+
+        <!-- font-awesome -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+        <!-- a grid framework in 250 bytes? are you kidding me?! -->
+        <link rel="stylesheet" type="text/css" href="css/grid.css">
+
+        <!-- Stylesheets -->
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+    </head>
+    <body>
+        <!-- header -->
+        <header>
+            <div class="container">
+                <!-- menu -->
+                <div class="row menu">
+                    <div>
+                        <a class="fa fa-bars fa-2x" href="#" target="_self"></a> 
+                        <h3>Dummy App</h3>
+                    </div>
+                    <div><a class="fa fa-user fa-2x" href="#" target="_self"></a> <span>John | Log out</span></div>
+                </div>
+                <hr>
+                <!-- breadcrumbs -->
+                <div class="row breadcrumb">
+                    <ul>
+                        <li class="fa"><a class="fa fa-home fa-2x" href="#" target="_self"></a></li>
+                        <li class="fa fa-angle-right fa-2x"><a href="#" target="_self">Page 1</a></li>
+                        <li class="fa fa-angle-right fa-2x"><a href="#" target="_self">Breadcrumb</a></li>
+                        <li class="fa fa-angle-right fa-2x"><span>Current page</span></li>
+                    </ul>
+                </div>
+            </div>
+            <!-- banner -->
+            <div class="container banner">
+                <div class="row">
+                    <div class="col">
+                        <p><i class="fa fa-puzzle-piece fa-3x"></i> <span>Sector</span><br /><strong>Sports</strong></p>
+                    </div>
+                    <div class="col">
+                        <p><i class="fa fa-futbol-o fa-3x"></i> <span>Sport Type</span><br /><strong>Bycicles</strong></p>
+                    </div>
+                    <div class="col">
+                        <p><i class="fa fa-bicycle fa-3x"></i> <span>Mode</span><br /><strong>Mountain Cross</strong></p>
+                    </div>
+                    <div class="col">
+                        <p><i class="fa fa-recycle fa-3x"></i> <span>Responsibility</span><br /><strong>Be Green!</strong></p>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <section>
+            <div class="container">
+                <!-- Help-->
+                <div class="row help">
+                    <h4>Help</h4>
+                    <!-- Accordition -->
+                    <div class="toggle">
+		        <a class="default" href="#" target="_self"><span>close</span><i class="fa fa-long-arrow-up"></i></a>
+                        <a href="#" target="_self"><span>open</span><i class="fa fa-long-arrow-down"></i></a>
+                    </div>
+                    <div class="col content" style="display: block">
+                        <p><i class="fa fa-life-ring fa-7x"> </i>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                        <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                    </div>
+                </div>
+                <div class="row user-form">
+                    <!-- User Form -->
+                    <h2>User registration</h2>
+                    <div class="col content">
+                        <fieldset>
+                            <label for="name">Full name <i>*</i></label>
+                            <input id="name" name="name" type="text" placeholder="John Doe" value="" required />
+                            <span style="visibility: hidden">instructions to show on input focus</span>
+
+                            <label for="email">E-mail <i>*</i></label>
+                            <input id="email" name="email" type="text" placeholder="john@example.com" value="" required />
+                            <span style="visibility: hidden">instructions to show on input focus</span>
+
+                            <label for="city">City <span>optional</span></label>
+                            <input id="city" name="city" type="text" placeholder="Liverpool" value="" />
+                            <span style="visibility: hidden">instructions to show on input focus</span>
+                        </fieldset>
+                    </div>
+                    <!-- Additional inputs -->
+                    <div class="col sidebar">
+                        <fieldset>
+
+                            <label for="ride-in-group">Ride in group?</label>
+
+                            <input name="ride-in-group" type="radio" value="Always" />
+                            <label class="inline-label" for="always">Always</label>
+
+                            <input name="ride-in-group" type="radio" value="Sometimes" />
+                            <label class="inline-label" for="sometimes">Sometimes</label>
+
+                            <input name="ride-in-group" type="radio" value="Never" checked />
+                            <label class="inline-label" for="never">Never</label>
+                            <br />
+                            <br />
+
+                            <label for="days-of-the-week">Days of the week</label>
+
+                            <input name="days-of-the-week[]" type="checkbox" value="Sun" />
+                            <label class="inline-label" for="Sunday">Sun</label>
+
+                            <input name="days-of-the-week[]" type="checkbox" value="Mon" checked />
+                            <label class="inline-label" for="Monday">Mon</label>
+
+                            <input name="days-of-the-week[]" type="checkbox" value="Tue" checked />
+                            <label class="inline-label" for="Tuesday">Tue</label>
+
+                            <input name="days-of-the-week[]" type="checkbox" value="Wed" />
+                            <label class="inline-label" for="Wednesday">Wed</label>
+
+                            <input name="days-of-the-week[]" type="checkbox" value="Thu" />
+                            <label class="inline-label" for="Thursday">Thu</label>
+
+                            <input name="days-of-the-week[]" type="checkbox" value="Fri" />
+                            <label class="inline-label" for="Friday">Fri</label>
+
+                            <input name="days-of-the-week[]" type="checkbox" value="Sat" />
+                            <label class="inline-label" for="Saturday">Sat</label>
+                        </fieldset>
+                        <div class="col user-form-action">
+                            <input id="btn-cancel" type="button" value="Cancel" />
+                            <input id="btn-save" type="submit" value="Save" />
+
+                        </div>
+                    </div>
+                </div>
+                <!-- Table List -->
+                <div id="table" class="row table">
+                    <h2>Bikers</h2>
+                    <div id="table-title" class="row title">
+                        <div class="col">Full name</div>
+                        <div class="col">E-mail</div>
+                        <div class="col">City</div>
+                        <div class="col">Ride in group</div>
+                        <div class="col">Days of the week</div>
+                        <div class="col">Registration day</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- footer -->
+        <footer>
+            <hr>
+            <div class="container">
+                <span>Dummy App</span>
+                <span>Version 1.14</span>
+            </div>
+        </footer>
+
+      <!-- JS Assets --> 
+      <script type="text/javascript" src="js/main.js"></script>
+      <script type="text/javascript" src="js/crud.js"></script>
+    </body>
+</html>
